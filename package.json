@@ -1,0 +1,48 @@
+{
+  "name": "webcrypt-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "karma start --single-run",
+    "test:watch": "karma start --watch --no-single-run",
+    "start": "npm run test"
+  },
+  "keywords": [],
+  "author": "Muhammad Fawwaz Orabi <mfawwaz93@gmail.com> (http://forabi.github.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-eslint": "^6.1.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-3": "^6.11.0",
+    "babel-register": "^6.9.0",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb-base": "^4.0.0",
+    "eslint-plugin-import": "^1.10.2",
+    "expect": "^1.20.2",
+    "http-server": "^0.9.0",
+    "karma": "^1.1.1",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-commonjs": "^1.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.0.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.9.2",
+    "source-map-loader": "^0.1.5",
+    "webpack": "^2.0.5-beta"
+  },
+  "dependencies": {
+    "babel-preset-es2015-webpack": "^6.4.1",
+    "lodash": "^4.13.1",
+    "webpack": "^2.0.5-beta"
+  }
+}
