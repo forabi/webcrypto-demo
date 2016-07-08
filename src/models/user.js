@@ -24,8 +24,8 @@ export default class User {
   generateKeyPair() {
     return window.crypto.subtle.generateKey(
       algorithms.dh,
-      true, // whether the key is extractable (i.e. can be used in exportKey)
-      ['deriveKey'] // can be any combination of "deriveKey" and "deriveBits"
+      true,
+      ['deriveKey']
     )
     .then(keyPair => {
       this.privateKey = keyPair.privateKey;
