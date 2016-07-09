@@ -3,21 +3,41 @@ const webpackConfig = require('./webpack.config');
 const env = require('./env');
 
 const customLaunchers = {
-  SL_Chrome: {
+  SL_Chrome_On_Windows: {
     base: 'SauceLabs',
-    platform: 'OS X 10.11',
+    platform: 'Windows 10',
     browserName: 'chrome',
   },
-  SL_Firefox: {
+  SL_Firefox_On_Windows: {
     base: 'SauceLabs',
-    platform: 'OS X 10.11',
+    platform: 'Windows 10',
     browserName: 'firefox',
   },
   SL_Edge: {
     base: 'SauceLabs',
     platform: 'Windows 10',
     browserName: 'microsoftedge',
-  }
+  },
+  SL_Chrome_On_OSX: {
+    base: 'SauceLabs',
+    platform: 'OS X 10.11',
+    browserName: 'chrome',
+  },
+  SL_Firefox_On_OSX: {
+    base: 'SauceLabs',
+    platform: 'OS X 10.11',
+    browserName: 'firefox',
+  },
+  SL_Chrome_On_Linux: {
+    base: 'SauceLabs',
+    platform: 'Linux',
+    browserName: 'chrome',
+  },
+  SL_Firefox_On_Linux: {
+    base: 'SauceLabs',
+    platform: 'Linux',
+    browserName: 'firefox',
+  },
 };
 
 module.exports = config => {
