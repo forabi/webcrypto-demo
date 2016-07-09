@@ -62,6 +62,7 @@ module.exports = config => {
       connectOptions: {
         port: 5757,
         logfile: 'sauce_connect.log',
+        tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
       },
       public: 'public',
     },

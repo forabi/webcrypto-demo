@@ -4,10 +4,7 @@ node_js:
 - '6'
 - '4'
 addons:
-  sauce_connect:
-    username: forabi
-    access_key:
-      secure: IRIUVRFnCNOxFhLU643GnoLXwkfHoZbiYw9GeUyksu5NHy2jOQG/h/pFaidh+8oCxe14qUJ6dl3OpdxNDEeNjibBjNSRHt7E8wfv+W3A5OviLNpD/9yX7bzpNunKzBn6U6y853eSmfYAlaecFUO407WEecHYwEjtTMCVu7G4KlrLvatgoJ1q3y85DtZjzUHPGg3M2Kw6pTRRX0vOYejDHaMggzQVmXjAElFbjFoBj3KLPWKazqfOsLIOwL7mGeMFmxIqbDda/8m0hANlFYjzfe1crro0Z7mxDV21GLxSyNVkGr6JGSi33rQaBLizaDf2VJ69hFNJnJDhCnUwGpy8k4Xg/bmTAi2/w6sPvc18t71GAMdsC+DkTHKrtL7sAqPkyfjbFVNKrRAPyrcbIW01uZs8/Vbn9+Rxb93wemDHgNglm7l1m/UnX/+i7A0jt/VHFeWdvjsrtigcw/Baac8kR+WG2J/l6Aa34RCevqEcD5mntgX3O+lmBrhnTZZaGTKI+EYn4BDUSv5tI8GAcBwTr+e+ZmjmHcdhtGQZXSRVbAKD53ouangfeNOINgYUdb9vorohM7JnQGmuPPeSDivpuoMoHX2hXfUEukso14rmtK615hU8TjM0UcQxtaKlqPZiaM6NcMGuT4nI2tzbQE7bOHsiI6T9+GQO7LdTIZl6o3k=
+  sauce_connect: true
 env:
   global:
     - SAUCE_USERNAME=forabi
