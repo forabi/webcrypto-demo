@@ -12,13 +12,13 @@ export default class User {
       publicKey,
       algorithms.dh,
       true,
-      ['deriveKey']
+      []
     );
   };
 
   static async exportPublicKey(publicKey) {
     const k = await window.crypto.subtle.exportKey(format, publicKey);
-    return omit(k, 'key_ops', 'ext');
+    return omit(k, 'key_ops');
   }
 
   generateKeyPair() {
