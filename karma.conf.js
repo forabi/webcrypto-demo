@@ -41,6 +41,10 @@ const customLaunchers = {
 };
 
 module.exports = config => {
+  if (env.isCI && (!process.env.SAUCE_USERNAME || !process.env.SAUCE_ACCESS_KEY)) {
+    console.log('Make sure the SAUCE_USERNAME and SAUCE_ACCESS_KEY environment variables are set.');
+    process.exit(1);
+  }
   config.set({
     basePath: '.',
     frameworks: ['mocha'],
@@ -86,7 +90,7 @@ module.exports = config => {
       },
       public: 'public',
     },
-    // captureTimeout: 120000, // Increase timeout in case connection in CI is slow
+    captureTimeout: 120000, // Increase timeout in case connection in CI is slow
     singleRun: true,
     concurrency: Infinity,
   });
