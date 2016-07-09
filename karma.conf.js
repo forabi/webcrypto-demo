@@ -46,13 +46,13 @@ module.exports = config => {
     },
     port: 9876,
     colors: true,
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_ERROR,
     autoWatch: true,
     browsers: (() => {
       if (env.isCI) return Object.keys(customLaunchers);
       return [
         'Chrome',
-        'Firefox'
+        'Firefox',
       ];
     })(),
     customLaunchers: customLaunchers,
@@ -61,9 +61,9 @@ module.exports = config => {
       recordScreenshots: false,
       connectOptions: {
         port: 5757,
-        logfile: 'sauce_connect.log'
+        logfile: 'sauce_connect.log',
       },
-      public: 'public'
+      public: 'public',
     },
     // captureTimeout: 120000, // Increase timeout in case connection in CI is slow
     singleRun: true,
